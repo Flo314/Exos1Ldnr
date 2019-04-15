@@ -5,4 +5,6 @@
     <string name="username">utilisateur</string>
     <string name="password">mot de passe</string>
     <string name="login">s\'identifier</string>
+    <string name="valueUsername">valeur utilisateur</string>
+    <string name="valuePassword">valeur mot de passe</string>
 </resources>

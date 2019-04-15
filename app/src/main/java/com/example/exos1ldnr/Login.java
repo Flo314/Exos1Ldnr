@@ -26,8 +26,19 @@ public class Login extends AppCompatActivity {
     }
 
     protected void loginButtonClicked(View view){
-        Toast.makeText(this, username.getText() + " " + password.getText() + " : You clicked !", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, ListActivity.class);
-        startActivity(intent);
+        // récupération des entré clavier
+        String enterLog = username.getText().toString();
+        String enterPwd = password.getText().toString();
+        // comparaison entré clavier avec les ressources
+        if(enterLog.equals(getResources().getString(R.string.valueUsername)) && enterPwd.equals(getResources().getString(R.string.valuePassword))){
+            Intent intent = new Intent(this, ListActivity.class);
+            startActivity(intent);
+            // si entré clavier == chaîne vide
+        }else if(enterLog.matches("") && enterPwd.matches("")) {
+            Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Le login ou le mot de passe est incorrect", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
