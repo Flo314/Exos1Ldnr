@@ -1,5 +1,6 @@
 package com.example.exos1ldnr;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,9 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("ListView");
 
         // récupération de la listView
          myListView = (ListView) findViewById(R.id.myListView);
