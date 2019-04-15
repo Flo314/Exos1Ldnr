@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exos1Ldnr</string>
+    <string name="login_screen">Ecran Authentification</string>
+    <string name="username">utilisateur</string>
+    <string name="password">mot de passe</string>
+</resources>
