@@ -4,4 +4,5 @@
     <string name="login_screen">Ecran Authentification</string>
     <string name="username">utilisateur</string>
     <string name="password">mot de passe</string>
+    <string name="login">s\'identifier</string>
 </resources>

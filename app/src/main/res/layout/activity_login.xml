@@ -73,11 +73,13 @@
                 android:textColorHint="#a3a1a1"/>
 
             <Button
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_bg"
                 android:layout_marginTop="20dp"
                 android:text="@string/login"
+                android:onClick="loginButtonClicked"
                 android:textColor="@color/colorWhite"
                 android:textSize="20sp"/>
 
